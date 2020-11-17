@@ -5,7 +5,6 @@
 #include <stdlib.h>
 #include "pagetable.h"
 
-
 extern int memsize;
 
 extern int debug;
@@ -16,8 +15,9 @@ extern struct frame *coremap;
  * Returns the page frame number (which is also the index in the coremap)
  * for the page that is to be evicted.
  */
-int arc_evict() {
-	
+int arc_evict()
+{
+
 	return 0;
 }
 
@@ -25,7 +25,8 @@ int arc_evict() {
  * needed by the ARC algorithm.
  * Input: The page table entry for the page that is being accessed.
  */
-void arc_ref(pgtbl_entry_t *p) {
+void arc_ref(pgtbl_entry_t *p)
+{
 
 	return;
 }
@@ -33,7 +34,6 @@ void arc_ref(pgtbl_entry_t *p) {
 /* Initializes any data structures needed for this
  * replacement algorithm.
  */
-void arc_init() {
-
+void arc_init()
+{
 }
-

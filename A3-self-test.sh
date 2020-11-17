@@ -12,7 +12,7 @@ echo ""
 echo "Checking out SVN repo..."
 
 # Checkout repo
-git clone https://mcsmark.utm.utoronto.ca/git/csc369h/repo/bare/${USER}.git  "$TESTDIR"
+git clone https://mcsmark.utm.utoronto.ca/git/csc369h_20209/repo/bare/fartootp.git  "$TESTDIR"
 
 if [ $? -ne 0 ]; then
 	echo "Failed to check out repo!"
@@ -60,7 +60,7 @@ for algo in rand arc fifo lru clock; do
 			MARK=$(($MARK+1))
 		fi
 	done
-		
+
 	if [ $algo = "rand" ]; then
 		echo "Mark for pagetable implementation: $MARK/$MAX"
 	else
